@@ -16,7 +16,7 @@ pip install notice-*-py3-none-any.whl
 ### 1. feishu notice
 example
 ```python
-from notice import fs_notice
+from notice import send
 
 image = "img_v3_025s_bdc4954d-e00b-4d4f-9b01-0d1eaf3d0ddg"
 title = "test noitce"
@@ -24,7 +24,7 @@ content = "test notice example\nthis is test noitce\n you are welcome\n"
 webhook = "" # feishu robot token
 
 if __name__ == '__main__':
-    fs_notice.fs_notice(image, title, content, webhook)
+    send.fs_notice(image, title, content, webhook)
 ```
 
 ### 2. qiwei notice
